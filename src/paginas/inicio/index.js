@@ -5,7 +5,7 @@ import Banner from 'componentes/Banner'
 import posts from 'json/posts'
 
 import styles from './inicio.module.css'
-import Post from 'componentes/Post'
+import Post from 'componentes/PostCard'
 
 export default function Inicio() {
   return (
