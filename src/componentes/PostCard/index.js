@@ -1,7 +1,10 @@
 import { Link } from 'react-router-dom'
 import styles from './Post.module.css'
+import Botao from 'componentes/Botao'
+
 
 export default function Post({post}) {
+
     return (
 
         <Link to={`/posts/${post.id}`}>
@@ -12,8 +15,7 @@ export default function Post({post}) {
                     alt='Imagem de post'
                 />
                 <h2 className={styles.titulo}>{post.titulo}</h2>
-
-                <button className={styles.botaoLer}>Ler</button>
+                <Botao>Ler</Botao>
             </div>
         </Link>
     )

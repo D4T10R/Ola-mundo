@@ -22,8 +22,8 @@ function AppRoutes() {
         <Route path="/" element={<PaginaPadrao/>} >
           <Route index element={<Inicio/>} />  // o atributo index faz com que eu pegue a mesma rota do elemento pai ou seja é = path="/" //
           <Route path="sobreMim" element={<SobreMim />} />
-          <Route path="posts/:id" element={<Post/>} />
         </Route>
+          <Route path="posts/:id/*" element={<Post />} />
           <Route path="*" element={<NaoEncontrada/>}/>
 
         {/*
